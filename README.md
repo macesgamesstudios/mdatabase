@@ -26,4 +26,4 @@ mdatabase.checkData(<dataName>, <databaseFile>)
 mdatabase.deleteData(<dataName>, <databaseFile>)
 ```
 
-# ```mdatabase.addData(..)```
+# mdatabase.addData(..)
