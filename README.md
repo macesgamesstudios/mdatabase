@@ -99,3 +99,23 @@ Let's take a look at our database file;
 
 }
 ```
+
+# Example
+
+I throw you want to get data from the database file to a data;
+
+```
+const mdatabase = require('maces_database')
+const prefix = "";
+
+if (mdatabase.checkData("tutorial", 'cat.json')){
+prefix = mdatabase.getData("tutorial", 'cat.json')
+
+console.log('setted : ' + prefix)
+}
+else {
+prefix = "&"
+
+console.log('setted : ' + prefix)
+}
+```
