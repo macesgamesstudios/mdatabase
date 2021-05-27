@@ -121,3 +121,6 @@ console.log('setted : ' + prefix)
 ```
 
 In this case, if we have "tutorial" data in our database file, our prefix variable will be synchronized with tutorial data and a notification message will be sent to the console. If not, our data will be set as "&" and a notification message will be sent to the console.
+
+# License
+http://mqsftp.gq/license/
