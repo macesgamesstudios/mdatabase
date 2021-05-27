@@ -26,11 +26,30 @@ mdatabase.checkData(<dataName>, <databaseFile>)
 mdatabase.deleteData(<dataName>, <databaseFile>)
 ```
 
-# First;
-In our project, we create a file with any name named database.json (I'll name it xd)After opening our file, it will be enough to write the following in it.
+# First Setup & addData(..);
+
+In our project, we create a file with any name named database.json (I'll name it cat.js xd). After opening our file, it will be enough to write the following in it.
 
 ```
 {
 
 }
 ```
+
+After creating our file, we can write our codes in our code file.
+
+```
+const mdatabase = require('maces_database')
+
+mdatabase.addData("tutorial", "hi!", 'cat.js')
+```
+
+Now there is a data called "tutorial" in our database called cat.js and the equivalent of this data is "hi". If you want, let's look at our database file;
+```
+{
+  "tutorial": "hi"
+}
+```
+
+# getData(..);
+
