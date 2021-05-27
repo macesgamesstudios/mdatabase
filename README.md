@@ -26,4 +26,11 @@ mdatabase.checkData(<dataName>, <databaseFile>)
 mdatabase.deleteData(<dataName>, <databaseFile>)
 ```
 
-# mdatabase.addData(..)
+# First;
+In our project, we create a file with any name named database.json (I'll name it xd)After opening our file, it will be enough to write the following in it.
+
+```
+{
+
+}
+```
