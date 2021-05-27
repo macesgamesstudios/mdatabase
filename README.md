@@ -1,4 +1,4 @@
-# mDatabase Module - Info
+# mDatabase Module - Information
 
 This module helps you to save, read and write data to your project in a simple way.
 
@@ -119,3 +119,5 @@ prefix = "&"
 console.log('setted : ' + prefix)
 }
 ```
+
+In this case, if we have "tutorial" data in our database file, our prefix variable will be synchronized with tutorial data and a notification message will be sent to the console. If not, our data will be set as "&" and a notification message will be sent to the console.
