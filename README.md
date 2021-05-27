@@ -22,8 +22,8 @@ In this project, certain functions and areas are specified in order to perform o
 ```
 mdatabase.addData(<dataName>, <dataValue>, <databaseFile>)
 mdatabase.getData(<dataName>, <databaseFile>)
-mdatabase.checkData(<dataName>, <databaseFile>)
 mdatabase.deleteData(<dataName>, <databaseFile>)
+mdatabase.checkData(<dataName>, <databaseFile>)
 ```
 
 # First Setup & addData(..);
@@ -41,7 +41,7 @@ After creating our file, we can write our codes in our code file.
 ```
 const mdatabase = require('maces_database')
 
-mdatabase.addData("tutorial", "hi!", 'cat.js')
+mdatabase.addData("tutorial", "hi!", 'cat.json')
 ```
 
 Now there is a data called "tutorial" in our database called cat.js and the equivalent of this data is "hi". If you want, let's look at our database file;
@@ -53,3 +53,32 @@ Now there is a data called "tutorial" in our database called cat.js and the equi
 
 # getData(..);
 
+Now we can pull the data we have created into our file. For example, let's equal our variable named "prefix" to "tutorial" data;
+
+```
+const mdatabase = require('maces_database')
+const prefix = "";
+
+prefix = mdatabase.getData("tutorial", 'cat.json')
+console.log(prefix)
+```
+
+Yes, our "prefix" value has now been synchronized with the "tutorial" data in our database file. In this case, it will print hi to our console as we first give our "hi" variable. If there is no such data in our database file, the module will warn you with an error!
+
+# deleteData(..);
+
+If you want to destroy a data on our database, you can easily complete it with function.
+
+```
+const mdatabase = require('maces_database')
+
+mdatabase.deleteData("tutorial", 'cat.json')
+```
+
+Let's take a look at our database file;
+
+```
+{
+
+}
+```
