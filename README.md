@@ -65,6 +65,23 @@ console.log(prefix)
 
 Yes, our "prefix" value has now been synchronized with the "tutorial" data in our database file. In this case, it will print hi to our console as we first give our "hi" variable. If there is no such data in our database file, the module will warn you with an error!
 
+# checkData(..); (bool : true, false)
+
+What we want is to check whether there is any data in your database file;
+
+```
+const mdatabase = require('maces_database')
+
+if (mdatabase.checkData("tutorial", 'cat.json')){
+console.log("found")
+}
+else {
+console.log("not found")
+}
+```
+
+In this case, since our database file contains "tutorial" data, the program will write "found" text to the console.
+
 # deleteData(..);
 
 If you want to destroy a data on our database, you can easily complete it with function.
