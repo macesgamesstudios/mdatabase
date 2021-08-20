@@ -7,7 +7,7 @@ Warning: This GitHub project contains the open source code of the package. You d
 # mDatabase Module - Installation
 
 > First, we enter the following command in the location of our project;
-```
+```cmd
 npm i maces_database
 ```
 > Then we add the following lines to our code file;
